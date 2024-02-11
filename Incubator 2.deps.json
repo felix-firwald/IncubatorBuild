@@ -28,6 +28,7 @@
           "System.Data.SQLite.EF6": "1.0.118",
           "System.IO.Packaging": "8.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "Telegram.Bot": "19.0.0",
           "XLParser": "1.5.2",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "8.0.0",
           "runtimepack.Microsoft.WindowsDesktop.App.Runtime.win-x64": "8.0.0",
@@ -2073,6 +2074,17 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Telegram.Bot/19.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net6.0/Telegram.Bot.dll": {
+            "assemblyVersion": "19.0.0.0",
+            "fileVersion": "19.0.0.0"
+          }
+        }
+      },
       "XLParser/1.5.2": {
         "dependencies": {
           "Irony.NetCore": "1.0.11",
@@ -3080,6 +3092,13 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Telegram.Bot/19.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q16IOitgjGoaJOuqgKQy0FeF+hr/ncmlX2esrhCC7aiyhSX7roYEriWaGAHkQZR8QzbImjFfl4eQh2IxcnOrPg==",
+      "path": "telegram.bot/19.0.0",
+      "hashPath": "telegram.bot.19.0.0.nupkg.sha512"
     },
     "XLParser/1.5.2": {
       "type": "package",
