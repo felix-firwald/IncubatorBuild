@@ -12,10 +12,12 @@
           "ClosedXML": "0.102.1",
           "DocX": "2.5.0",
           "DocumentFormat.OpenXml": "2.16.0",
+          "DynamicLanguageRuntime": "1.3.4",
           "EntityFramework": "6.4.4",
           "ExcelNumberFormat": "1.1.0",
           "FontAwesome.WPF": "4.7.0.9",
           "FreeSpire.Doc": "11.6.0",
+          "IronPython": "3.4.1",
           "Irony.NetCore": "1.0.11",
           "Microsoft.CSharp": "4.7.0",
           "Newtonsoft.Json": "13.0.3",
@@ -1039,10 +1041,29 @@
           }
         }
       },
+      "DynamicLanguageRuntime/1.3.4": {
+        "dependencies": {
+          "System.CodeDom": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Dynamic.dll": {
+            "assemblyVersion": "1.3.4.0",
+            "fileVersion": "1.3.4.1000"
+          },
+          "lib/net6.0/Microsoft.Scripting.Metadata.dll": {
+            "assemblyVersion": "1.3.4.0",
+            "fileVersion": "1.3.4.1000"
+          },
+          "lib/net6.0/Microsoft.Scripting.dll": {
+            "assemblyVersion": "1.3.4.0",
+            "fileVersion": "1.3.4.1000"
+          }
+        }
+      },
       "EntityFramework/6.4.4": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "System.CodeDom": "4.7.0",
+          "System.CodeDom": "6.0.0",
           "System.ComponentModel.Annotations": "5.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0",
           "System.Data.SqlClient": "4.8.1"
@@ -1088,6 +1109,30 @@
           }
         }
       },
+      "IronPython/3.4.1": {
+        "dependencies": {
+          "DynamicLanguageRuntime": "1.3.4",
+          "Mono.Unix": "7.1.0-final.1.21458.1"
+        },
+        "runtime": {
+          "lib/net6.0/IronPython.Modules.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.1000"
+          },
+          "lib/net6.0/IronPython.SQLite.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.1000"
+          },
+          "lib/net6.0/IronPython.Wpf.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.1000"
+          },
+          "lib/net6.0/IronPython.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.1000"
+          }
+        }
+      },
       "Irony.NetCore/1.0.11": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -1122,6 +1167,14 @@
         }
       },
       "Microsoft.Win32.SystemEvents/6.0.0": {},
+      "Mono.Unix/7.1.0-final.1.21458.1": {
+        "runtime": {
+          "lib/net6.0/Mono.Unix.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.100.21.45801"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -1382,7 +1435,7 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.CodeDom/4.7.0": {},
+      "System.CodeDom/6.0.0": {},
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -2141,6 +2194,13 @@
       "path": "docx/2.5.0",
       "hashPath": "docx.2.5.0.nupkg.sha512"
     },
+    "DynamicLanguageRuntime/1.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tYp2w0KSARfyn7MQhagCbHYLfnoVpKXRxhpZDngACq16cTkJyh4BudpI38M4xFRCD78hdYi6WHd7RZZJ96oNFg==",
+      "path": "dynamiclanguageruntime/1.3.4",
+      "hashPath": "dynamiclanguageruntime.1.3.4.nupkg.sha512"
+    },
     "EntityFramework/6.4.4": {
       "type": "package",
       "serviceable": true,
@@ -2168,6 +2228,13 @@
       "sha512": "sha512-OUkSaNsIqXePNSfcYOFT8wzRalrXczTdMYTOqLVLOcUQScZ6inw0vRJP04aICBx9O4jTo5RMP3rcRxkqwiVsbw==",
       "path": "freespire.doc/11.6.0",
       "hashPath": "freespire.doc.11.6.0.nupkg.sha512"
+    },
+    "IronPython/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2CKriGKn8KAdEHTpV6umPaEA5kq2tod5npH1V07JeEetJO0PqNYLD7ovJcUB4ZfPVPhwdrlGkOeqyJx8EGGJVA==",
+      "path": "ironpython/3.4.1",
+      "hashPath": "ironpython.3.4.1.nupkg.sha512"
     },
     "Irony.NetCore/1.0.11": {
       "type": "package",
@@ -2217,6 +2284,13 @@
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "Mono.Unix/7.1.0-final.1.21458.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rhxz4A7By8Q0wEgDqR+mioDsYXGrcYMYPiWE9bSaUKMpG8yAGArhetEQV5Ms6KhKCLdQTlPYLBKPZYoKbAvT/g==",
+      "path": "mono.unix/7.1.0-final.1.21458.1",
+      "hashPath": "mono.unix.7.1.0-final.1.21458.1.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",
@@ -2568,12 +2642,12 @@
       "path": "system.buffers/4.3.0",
       "hashPath": "system.buffers.4.3.0.nupkg.sha512"
     },
-    "System.CodeDom/4.7.0": {
+    "System.CodeDom/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hs9pw/kmvH3lXaZ1LFKj3pLQsiGfj2xo3sxSzwiLlRL6UcMZUTeCfoJ9Udalvn3yq5dLlPEZzYegrTQ1/LhPOQ==",
-      "path": "system.codedom/4.7.0",
-      "hashPath": "system.codedom.4.7.0.nupkg.sha512"
+      "sha512": "sha512-CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "path": "system.codedom/6.0.0",
+      "hashPath": "system.codedom.6.0.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
