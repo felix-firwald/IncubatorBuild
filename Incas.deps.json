@@ -18,6 +18,7 @@
           "FontAwesome.WPF": "4.7.0.9",
           "FreeSpire.Doc": "11.6.0",
           "IronPython": "3.4.1",
+          "IronPython.StdLib": "3.4.1",
           "Irony.NetCore": "1.0.11",
           "Microsoft.CSharp": "4.7.0",
           "Newtonsoft.Json": "13.0.3",
@@ -1133,6 +1134,11 @@
           }
         }
       },
+      "IronPython.StdLib/3.4.1": {
+        "dependencies": {
+          "IronPython": "3.4.1"
+        }
+      },
       "Irony.NetCore/1.0.11": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -2235,6 +2241,13 @@
       "sha512": "sha512-2CKriGKn8KAdEHTpV6umPaEA5kq2tod5npH1V07JeEetJO0PqNYLD7ovJcUB4ZfPVPhwdrlGkOeqyJx8EGGJVA==",
       "path": "ironpython/3.4.1",
       "hashPath": "ironpython.3.4.1.nupkg.sha512"
+    },
+    "IronPython.StdLib/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qrLtYSNWo46f6Xb/FC33KLYNHFSKABJXmYi35Dg1D3ET0GBX92YqtC/hX0CQuntWscGNJQ4Wm3Gjl8NiRoLWzw==",
+      "path": "ironpython.stdlib/3.4.1",
+      "hashPath": "ironpython.stdlib.3.4.1.nupkg.sha512"
     },
     "Irony.NetCore/1.0.11": {
       "type": "package",
